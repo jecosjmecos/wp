@@ -1,0 +1,294 @@
+* {
+	--bg-color: #FEF0ED;
+	--main-color: #E5AB9D;
+	--text-color: #162E0F;
+	--red-color: #954633;
+	--green-color: #256b41;
+	--link-color: #727272;
+	outline:none;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+a {
+	color: var(--link-color);
+	outline:none!important;
+}
+
+button,
+button.alt,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.widget a.button,
+.woocommerce-message a.button,
+.woocommerce-info a.button,
+.woocommerce-error a.button,
+.woocommerce-noreviews a.button,
+p.no-comments a.button {
+	border-radius: 5px!important;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 15px!important;
+	padding-right: 15px!important;
+	background-color: var(--red-color)!important;
+	color: #fff;
+	border-top: 1px solid var(--red-color)!important;
+	border-right: 1px solid var(--red-color) !important;
+	border-bottom: 1px solid var(--red-color) !important;
+	border-left: 1px solid var(--red-color) !important;
+	transition: background-color ease-out 0.35s, color ease-out 0.35s;
+	min-height: 42px;
+}
+
+button:hover,
+button.alt:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.button:hover,
+.widget a.button:hover,
+.woocommerce-message a.button:hover,
+.woocommerce-info a.button:hover,
+.woocommerce-error a.button:hover,
+.woocommerce-noreviews a.button:hover,
+p.no-comments a.button:hover {
+	background-color: #fff !important;
+	color: var(--red-color)!important;
+}
+
+.site-header,
+.site-footer {
+	background-color: var(--main-color);
+}
+
+@media (min-width: 768px){
+	.main-navigation ul.menu,
+	.main-navigation ul.nav-menu {
+		display: flex;
+	}
+}
+
+.main-navigation ul.menu>li>a,
+.main-navigation ul.nav-menu>li>a {
+	font-size: 18px;
+	transition: color ease-out 0.35s, background-color ease-out 0.35s;
+}
+
+.main-navigation ul li a:hover:not(.cart-contents),
+.main-navigation ul li:hover>a:not(.cart-contents),
+.site-title a:hover:not(.cart-contents),
+.site-header ul.menu li.current-menu-item>a:not(.cart-contents) {
+	color: #fff!important;
+	background-color: var(--red-color);
+}
+
+.site-header ul.menu li.current-menu-item>a{
+	color: var(--red-color)!important;
+}
+
+@media (min-width: 768px) {
+	.site-header-cart .cart-contents {
+		padding: 18px 0;
+	}
+}
+
+.storefront-primary-navigation {
+	border-top: 1px solid var(--red-color);
+}
+
+@media (max-width: 767.98px) {
+	.storefront-primary-navigation {
+		border-top: none;
+	}
+}
+
+
+button.menu-toggle,
+button.menu-toggle:hover{
+	background-color: transparent;
+	border: none;
+}
+
+ul.products li.product .button,
+ul.products .wc-block-grid__product .button,
+.wc-block-grid__products li.product .button,
+.wc-block-grid__products .wc-block-grid__product .button,
+.form-row .button{
+	color: #fff;
+	background-color: var(--red-color);
+	border-radius: 5px;
+	transition: background-color ease-out 0.35s;
+	border: 1px solid var(--red-color);
+}
+
+ul.products li.product .button:hover,
+ul.products .wc-block-grid__product .button:hover,
+.wc-block-grid__products li.product .button:hover,
+.wc-block-grid__products .wc-block-grid__product .button:hover,
+.form-row .button:hover{
+	background-color: #fff;
+	color: var(--red-color);
+}
+
+.pagination .page-numbers li .page-numbers,
+.woocommerce-pagination .page-numbers li .page-numbers{
+	background-color: var(--main-color);
+	border: 1px solid var(--main-color);
+	color: #fff!important;
+	transition: background-color ease-out 0.35s, border ease-out 0.35s;
+	border-radius: 5px;
+}
+
+.pagination .page-numbers li a.page-numbers:hover,
+.woocommerce-pagination .page-numbers li a.page-numbers:hover{
+	background-color: #fff;
+	border-color: var(--red-color);
+	color: var(--red-color)!important;
+}
+
+.woocommerce-pagination .page-numbers li .page-numbers.current{
+	background-color: var(--red-color);
+}
+
+.storefront-sorting select{
+	min-height: 34px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 1px solid var(--red-color);
+}
+
+@media (min-width: 768px){
+	.woocommerce-result-count {
+		padding: 9px 0;
+	}
+}
+
+.main-navigation a {
+	transition: background-color ease-out 0.35s;
+}
+
+.main-navigation ul li a,
+.site-title a,
+ul.menu li a,
+.site-branding h1 a,
+button.menu-toggle,
+button.menu-toggle:hover,
+.handheld-navigation .dropdown-toggle{
+	color: var(--red-color);
+}
+
+.main-navigation ul.menu ul{
+	border: 1px solid var(--main-color);
+}
+
+.main-navigation ul.menu ul a{
+	background-color: #fff;
+	color: var(--red-color);
+}
+
+.main-navigation ul.menu ul li:hover>a{
+	background-color: var(--red-color);
+	color: #fff;
+}
+
+@media screen and (min-width: 768px){
+ .site-header-cart .widget_shopping_cart {
+		background-color: #fff;
+		border: 1px solid var(--red-color);
+	}
+}
+
+.site-search .widget_product_search form input[type=search],
+.site-search .widget_product_search form input[type=text]{
+	background-color: #fff;
+	border: 1px solid var(--red-color);
+	outline: none;
+	border-radius: 5px;
+}
+
+.added_to_cart.alt,
+.added_to_cart,
+.widget a.button.checkout{
+	border-radius: 5px;
+}
+
+.woocommerce-mini-cart__buttons a.button:first-child{
+	background-color: #fff!important;
+	border: 1px solid var(--red-color);
+	color: var(--red-color)!important;
+	transition: background-color ease-out 0.35s;
+}
+
+.woocommerce-mini-cart__buttons a.button:first-child:hover{
+	background-color: var(--red-color)!important;
+	color: #fff!important;
+}
+
+ul.products li.product .woocommerce-LoopProduct-link img{
+	transition: transform ease-out 0.35s;
+}
+
+ul.products li.product .woocommerce-LoopProduct-link:hover img{
+	transform: scale(0.95);
+}
+
+.woocommerce-breadcrumb a,
+a.woocommerce-review-link,
+.product_meta a{
+	color: var(--red-color)!important;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=password],
+input[type=search],
+textarea,
+.input-text{
+	outline: none!important;
+	background-color: transparent;
+	border: 1px solid var(--red-color);
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.form-row label{
+	margin-bottom: 15px;
+}
+
+table.cart td.product-remove,
+table.cart td.actions{
+	padding: 0 15px 15px;
+	border-top-color: transparent;
+}
+
+@media (min-width: 768px){
+	table.cart td.actions input {
+		margin-right: 10px;
+	}
+}
+
+a:focus,
+button:focus,
+.button.alt:focus,
+input:focus,
+textarea:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus {
+	outline-color: transparent;
+}
+
